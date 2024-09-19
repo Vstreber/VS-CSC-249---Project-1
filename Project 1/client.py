@@ -12,7 +12,7 @@ PORT = 65432
 #
 #    2. Input your word. No spaces, numbers, special characters, or capitalization. Must be one word.
 #
-#    3. Input your secret CODE NUMBER of choice. This is can be any positive number, and it will allow 
+#    3. Input your secret CODE NUMBER of choice. This is can be any positive number under 26, and it will allow 
 #       you to decode your word later.
 #   
 #   Example input: 
