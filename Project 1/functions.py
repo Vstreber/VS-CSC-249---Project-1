@@ -11,7 +11,7 @@ def encode(MESSAGE, CODENUM):
 
     for i in letterIndex:
         if (i + CODENUM) > 25:
-            difference = 26 - i
+            difference = 25 - i
             encodedWord = encodedWord + alphabet[CODENUM - difference]
             iterator+=1
         else:
@@ -29,7 +29,7 @@ def decode(MESSAGE, CODENUM):
     letterIndex = [alphabet.index(i) for i in MESSAGE]
 
     for i in letterIndex:
-        if (i - CODENUM) < 26:
+        if (i - CODENUM) < 0:
             difference = CODENUM - i
             decodedWord = decodedWord + alphabet[26-difference]
             iterator+=1
